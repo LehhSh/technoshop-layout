@@ -1,0 +1,140 @@
+@import url(https://fonts.googleapis.com/css?family=Michroma&display=swap);
+
+body {
+  font-family: Michroma, serif;
+  background: linear-gradient(90deg, #a8ccff 0%, #8c46a0 100%);
+}
+
+p {
+  color: aquamarine;
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.nav-link:hover {
+  color: rgba(255, 255, 255, 0.884);
+}
+
+.navbar-nav .nav-link.active {
+  color: white;
+}
+
+.navbar-toggler {
+  color: white;
+  font-size: 1.5em;
+  align-items: center;
+  border: none;
+}
+
+.navbar-toggler:active {
+  border-color: none;
+}
+
+.navbar-brand img {
+  width: 2em;
+}
+
+.btn,
+.btn-primary {
+  background-color: rgb(183, 0, 255);
+  border-color: rgb(174, 0, 255);
+  color: white;
+}
+
+.btn:hover,
+.btn-primary:hover {
+  background-color: rgb(221, 136, 255);
+  border-color: rgb(174, 0, 255);
+  color: rgb(255, 255, 255);
+}
+
+.btn-check:checked + .btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check) + .btn:active {
+  background-color: rgb(99, 0, 138);
+  border-color: rgb(174, 0, 255);
+  color: rgb(0, 204, 255);
+}
+
+.sidebar {
+  color: aquamarine;
+  background: radial-gradient(rgb(68, 68, 68) 0%, #390085 100%);
+  border-radius: 1rem;
+}
+
+.card {
+  background: radial-gradient(rgb(68, 68, 68) 0%, #390085 100%);
+  color: aquamarine;
+}
+
+.card:hover {
+  background: radial-gradient(rgb(85, 85, 85) 0%, #5500c5 100%);
+}
+
+.card a {
+  text-decoration: none;
+  color: aquamarine;
+}
+
+.slide-text,
+.footer-text {
+  color: aquamarine;
+  margin: auto auto;
+}
+
+.slide-img-text {
+  background: radial-gradient(rgb(68, 68, 68) 0%, #390085 100%);
+  border-radius: 1em;
+}
+
+footer {
+  background-color: rgba(var(--bs-emphasis-color-rgb), 0.8);
+}
+
+.call-container .media-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.call-animation {
+  animation: call 2s ease 0s infinite normal forwards;
+}
+
+@keyframes call {
+  0%,
+  100% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+  }
+
+  15% {
+    transform: translateX(-30px) rotate(-6deg);
+  }
+
+  30% {
+    transform: translateX(15px) rotate(6deg);
+  }
+
+  45% {
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+
+  60% {
+    transform: translateX(9px) rotate(2.4deg);
+  }
+
+  75% {
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+
+@media (max-width: 755px) {
+  .carousel-indicators {
+    display: none;
+  }
+}
